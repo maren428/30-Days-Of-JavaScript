@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oggetto Console</title>
+</head>
+<body>
+    <script>
+        console.log('%c30 Days Of JavaScript', 'color:green');
+        console.log(
+  '%c30 Days%c %cOf%c %cJavaScript%c',
+// Stile di 30 days  
+  'color:green',
+//reset dello stile    
+  '',
+// Stile di Of  
+  'color:red',
+//reset  
+  '',
+// Stile di Javascript  
+  'color:yellow'
+)
+/* console.log(
+  '%c30 Days %cOf %cJavaScript',
+  'color:green',
+  'color:red',
+  'color:yellow'
+) */
+
+//console.table() visualizza una tabella con indici a sinistra e valori a destra
+const names = ['Asabeneh', 'Brook', 'David', 'John']
+console.table(names);
+//Nel caso di oggetti le chiavi saranno gli indici
+const user = {
+  name: 'Asabeneh',
+  title: 'Programmer',
+  country: 'Finland',
+  city: 'Helsinki',
+  age: 250
+}
+console.table(user)
+
+/* Mi da una tabella a tre colonne: la prima con gli indici dell'array di array;la secondacorrisponde all'indice 0 degli array interni e la terza all'indice 1 degli array interni */
+const countries = [
+  ['Finland', 'Helsinki'],
+  ['Sweden', 'Stockholm'],
+  ['Norway', 'Oslo']
+]
+console.table(countries)
+
+/* Mi da una tabella a 6 colonne: gli indici del contenitore e le altre 5 sono le chiavi.
+In pratica ogni oggetto è una riga della tabella o matrice.
+Matrice => Tabella di valori organizzati in righe e colonne */
+const users = [
+  {
+    name: 'Asabeneh',
+    title: 'Programmer',
+    country: 'Finland',
+    city: 'Helsinki',
+    age: 250
+  },
+  {
+    name: 'Eyob',
+    title: 'Teacher',
+    country: 'Sweden',
+    city: 'London',
+    age: 25
+  },
+  {
+    name: 'Asab',
+    title: 'Instructor',
+    country: 'Norway',
+    city: 'Oslo',
+    age: 22
+  },
+  {
+    name: 'Matias',
+    title: 'Developer',
+    country: 'Denmark',
+    city: 'Copenhagen',
+    age: 28
+  }
+]
+console.table(users);
+
+const countriesOther = [
+  ['Finland', 'Helsinki'],
+  ['Sweden', 'Stockholm'],
+  ['Norway', 'Oslo']
+]
+
+for (let i = 0; i <= 10; i += 1) {
+  let errorMessage = `${i} is not even`
+  console.log('the # is ' + i)
+  //console.assert(affermazione, messaggioSeÈFalsa)
+  console.assert(i % 2 === 0, { number: i, errorMessage: errorMessage })
+}
+
+console.group('Names')
+console.log(names)
+console.groupEnd()
+
+console.group('Countries')
+console.log(countries)
+console.groupEnd()
+
+console.group('Users')
+console.log(user)
+console.log(users)
+console.groupEnd()
+
+//Uso standard per raggruppare più console.log
+console.group('Names')
+console.log('First name:', 'Mario')
+console.log('Last name:', 'Rossi')
+console.log('Age:', 30)
+console.log('City:', 'Milano')
+console.groupEnd()
+
+// Gruppo chiuso di default, utile quando ce ne sono tanti
+console.groupCollapsed('Details')  
+console.log('Dettaglio 1')
+console.log('Dettaglio 2')
+console.groupEnd()
+
+//Group annidati
+console.group('User Info')
+  console.log('Name: Mario Rossi')
+  
+  console.group('Contact')
+    console.log('Email: mario@example.com')
+    console.log('Phone: 123-456-7890')
+  console.groupEnd()
+  
+  console.group('Address')
+    console.log('City: Milano')
+    console.log('Country: Italia')
+  console.groupEnd()
+  
+console.groupEnd()
+    </script>
+</body>
+</html>
