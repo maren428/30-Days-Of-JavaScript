@@ -1,0 +1,110 @@
+body {
+    background-image: url("../img/galaxy.gif");
+    background-size: auto;
+}
+header {
+    width:1050px;
+    margin:auto;
+    padding-top:50px;
+}
+header h1 {
+    color:white;
+    font-size:39px;
+    font-weight:600;
+    letter-spacing:2px;
+    text-align:center;
+    text-shadow: 3px 1px 1px steelblue;
+    margin-bottom:60px;
+}
+#planet-selector {
+    width:600px;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap: 10px;
+    margin-bottom:20px;
+}
+#planet-selector input {
+    background-color:white;
+    width:250px;
+    padding:10px;
+    font-size:14px;
+}
+#planet-selector select {
+    padding:10px;
+    font-size:14px;
+}
+#planet-selector option {
+    font-weight:500;
+}
+#planet-selector button {
+    background-color: rgba(255,255,255,0.5);
+    width:150px;
+    padding:12px;
+    border-radius:5px;
+    font-size:14px;
+    font-weight:600;
+    color:white;
+}
+.flex-container {
+    background-color:rgba(59,59,59,0.6);
+    width:1050px;
+    height:470px;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.flex-container .planet-image{
+    width:400px;
+    height:400px;
+}
+.flex-items {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+}
+.error {
+    height:150px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.error p {
+    color:white;
+    font-size:18px;
+    font-weight:500;
+    background-color:rgba(96,96,96,0.3);
+    padding:20px 200px;
+}
+.planet-description {
+    width:500px;
+    height:190px;
+    background-color:rgba(80,80,80,0.3);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+
+}
+.description-title {
+    color:white;
+    text-align:center;
+}
+.planet-name {
+    font-weight:700;
+}
+.planet-weight {
+    color:white;
+    font-size:16px;
+    font-weight:700;
+    text-align:center;
+    width:115px;
+    height:110px;
+    padding:45px 10px;
+    background-color:rgba(96,96,96,0.3);
+    border-radius:50%;
+}
