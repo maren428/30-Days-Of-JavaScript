@@ -1,5 +1,9 @@
 # 30 Days Of JavaScript
 
+## My fork
+Hi, I'm Maren! This is my personal 🍴 fork of [30-Days-Of-JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript) by [Asabeneh](https://github.com/Asabeneh) and as of now, I completed the challenge up to **Day 24** 📅.  
+I began studying 📖 Javascript in a training course, and then I decided to deepen my knowledge of this programming language,as I became passionate about web development.   
+
  <!--  <strong>Learn with Asabeneh by joining the upcoming [<em>CODING BOOTCAMP</em>](https://docs.google.com/forms/d/e/1FAIpQLSf0oNIYR9XU1DCctfl-pY36KbWse-SQX5aQaUgetqSinFYnmQ/viewform) </strong> -->
 
 
