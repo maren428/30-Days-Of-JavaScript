@@ -1,0 +1,40 @@
+.main-paragraph p {
+    text-align:center;
+    font-size:28px;
+    font-weight:600;
+    text-shadow: 0 3px 2px rgba(0,0,0,0.3);
+    box-shadow: 3px 4px 8px 0px rgba(0, 0, 0, 0.3);
+    max-width:500px;
+    margin:250px auto;
+    padding:20px;
+}
+
+#key-container {
+    max-width:500px;
+    margin:auto;
+}
+#key-container h2 {
+    text-shadow: 0 3px 2px rgba(0,0,0,0.3);
+    box-shadow: 3px 4px 8px 0px rgba(0, 0, 0, 0.3);
+    max-width:450px;
+    text-align:center;
+    padding:20px;
+    font-size:28px;
+    font-weight:600;
+    margin-top:200px;
+    margin-bottom:20px;
+}
+#key-container span {
+    color:green;
+}
+#key-container h3 {
+    text-shadow: 0 3px 2px rgba(0,0,0,0.3);
+    box-shadow: 3px 4px 8px 0px rgba(0, 0, 0, 0.3);
+    max-width:160px;
+    height:160px;
+    line-height:160px;
+    margin:auto;
+    font-size:80px;
+    text-align:center;
+    color:green;
+}
