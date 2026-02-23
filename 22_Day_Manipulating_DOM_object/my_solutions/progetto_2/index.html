@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>30DaysOfJavaScript:22 Day: World Countries List</title>
+    <!--CSS  -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!--FONT  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<h2>World Countries List</h2>
+
+		<h4 id="total-countries"></h4>
+		<h3>30DaysOfJavaScript:DOM-Day-2</h3>
+		<h3>Author: Asabeneh Yetayeh</h3>
+
+	</header>
+
+	<div class="countries-container">
+		<div class="countries-wrapper">
+
+		</div>
+	</div>
+<!--Importando anche lo script di countries le sue variabili diventano globali e quindi direttamente utilizzabili negli altri file js. -->
+<!--L'alternativa sarebbe stata includere solo lo script del main.js e importare internamente countries,includendo l'attributo type="module" allo script nella pagina html"  -->
+	<script src="./data/countries.js"></script>
+	<script src="./js/script.js"></script>
+</body>
+</html>
